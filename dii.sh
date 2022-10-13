@@ -204,10 +204,10 @@ function install_rust() {
     su - $USERNAME -c "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"
 }
 
-add_user_to_sudoers
-detect_sensors
 add_contrib_and_non_free
 install_programs
+add_user_to_sudoers
+detect_sensors
 enable_firewall
 
 install_microcode
