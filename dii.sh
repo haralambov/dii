@@ -192,7 +192,7 @@ function install_programs() {
         "thunar" "firefox-esr" "screenfetch" "ripgrep" "curl" "tlp"
         "lm-sensors" "ufw" "redshift" "unzip" "zip" "unrar" "arandr"
         "mlocate" "tree" "python3-pip" "fuse" "snapd" "keepassxc"
-        "vlc" "evince"
+        "vlc" "evince" "psmisc"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
