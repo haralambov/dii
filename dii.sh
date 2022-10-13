@@ -90,10 +90,13 @@ function install_nodejs() {
     mkdir /usr/local/bin/nodejs
     mv lib/ share/ include/ bin/ /usr/local/bin/nodejs
 
-    ln -s /usr/local/bin/nodejs/bin/node /usr/local/bin/node
-    ln -s /usr/local/bin/nodejs/bin/npm /usr/local/bin/npm
-    ln -s /usr/local/bin/nodejs/bin/npx /usr/local/bin/npx
-    ln -s /usr/local/bin/nodejs/bin/corepack /usr/local/bin/corepack
+    FILES_TO_LINK=("node" "npm" "npx" "corepack")
+
+    for FILE_TO_LINK in "${FILES_TO_LINK[@]}"; do
+        if [ ! -f "/usr/local/bin/$FILE_TO_LINK" ]; then
+            ln -s "/usr/local/bin/nodejs/bin/$FILE_TO_LINK" "/usr/local/bin/$FILE_TO_LINK"
+        fi
+    done
 
     rm -rf /home/$USERNAME/node
 }
