@@ -201,7 +201,7 @@ function install_programs() {
 }
 
 function install_rust() {
-    su - $USERNAME -c "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 }
 
 add_contrib_and_non_free
