@@ -193,6 +193,7 @@ function install_programs() {
         "lm-sensors" "ufw" "redshift" "unzip" "zip" "unrar" "arandr"
         "mlocate" "tree" "python3-pip" "fuse" "snapd" "keepassxc"
         "vlc" "evince" "psmisc" "pavucontrol" "pipewire" "pipewire-audio-client-libraries"
+        "ncal"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
