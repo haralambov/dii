@@ -101,18 +101,6 @@ function install_nodejs() {
     rm -rf /home/$USERNAME/node
 }
 
-function install_bluetooth() {
-    echo "Installing bluetooth"
-    install_program bluetooth
-    install_program blueman-applet
-    install_program pulseaudio-utils
-    install_program pulseaudio-module-bluetooth
-    # enables the switch on connect module,
-    # which automatically changes the default output device
-    echo "load-module module-switch-on-connect" >> /etc/pulse/default.pa
-    su - $USERNAME -c "sudo systemctl enable bluetooth"
-}
-
 function cleanup() {
     echo "Cleanup..."
     apt purge -y vim-tiny vim-common notification-daemon;
@@ -216,7 +204,6 @@ install_program firmware-iwlwifi
 
 install_docker
 install_nodejs
-# install_bluetooth
 install_program docker-compose
 install_program qbittorrent
 
