@@ -180,8 +180,11 @@ function install_programs() {
         "thunar" "thunar-archive-plugin" "firefox-esr" "screenfetch" "ripgrep" "curl" "tlp"
         "lm-sensors" "ufw" "redshift" "unzip" "zip" "unrar" "arandr"
         "mlocate" "tree" "python3-pip" "fuse" "snapd" "keepassxc"
-        "vlc" "evince" "psmisc" "pavucontrol" "pipewire" "pipewire-audio-client-libraries"
-        "ncal"
+        "vlc" "psmisc" "pavucontrol" "pipewire" "pipewire-audio-client-libraries"
+        "ncal" "libnotify-bin" "playerctl"
+        "libspa-0.2-bluetooth" # pipewire dependency for bluetooth audio
+        "blueman" "i3blocks"
+        "lxappearance"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
