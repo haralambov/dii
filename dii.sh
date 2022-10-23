@@ -103,7 +103,7 @@ function install_nodejs() {
 
 function cleanup() {
     echo "Cleanup..."
-    apt purge -y vim-tiny vim-common notification-daemon;
+    apt purge -y vim-tiny vim-common notification-daemon xterm os-prober;
     apt clean && apt autoclean && apt autoremove
     # TODO: Remove dmenu if it doesn't break anything
 }
