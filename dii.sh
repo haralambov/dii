@@ -143,11 +143,6 @@ function detect_sensors() {
 
 function add_xinitrc() {
     echo "Adding .xinitrc";
-    # TODO: add layouts
-    # TODO: set change layout shortcut
-    echo "setxkbmap -option;setxkbmap -option \"caps:swapescape\"" >> /home/$USERNAME/.xinitrc
-    echo "feh --bg-scale /home/$USERNAME/Projects/dotfiles/debian_wallpaper.png" >> /home/$USERNAME/.xinitrc;
-    echo "redshift -P -O 3500" >> /home/$USERNAME/.xinitrc;
     echo "exec i3" >> /home/$USERNAME/.xinitrc;
     chown -R $USERNAME:$USERNAME /home/$USERNAME/.xinitrc;
 }
