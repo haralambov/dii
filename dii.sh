@@ -176,7 +176,7 @@ function install_programs() {
         "lm-sensors" "ufw" "redshift" "unzip" "zip" "unrar" "arandr"
         "mlocate" "tree" "python3-pip" "fuse" "snapd" "keepassxc"
         "vlc" "psmisc" "pavucontrol" "pipewire" "pipewire-audio-client-libraries"
-        "ncal" "libnotify-bin" "playerctl"
+        "ncal" "libnotify-bin" "playerctl" "pulseaudio" "pulseaudio-utils"
         "libspa-0.2-bluetooth" # pipewire dependency for bluetooth audio
         "blueman" "i3blocks"
         "lxappearance"
