@@ -167,6 +167,12 @@ function add_config_files() {
     chown -R $USERNAME:$USERNAME /home/$USERNAME/Projects/dotfiles;
     cd /home/$USERNAME/Projects/dotfiles;
     su - $USERNAME -c "cd /home/$USERNAME/Projects/dotfiles && bash /home/$USERNAME/Projects/dotfiles/dotfile_mapper.sh"
+
+    # enabling switch-on-connect module
+    HAS_MODULE_ENABLED=$(grep '^load-module module-switch-on-connect' /etc/pulse/default.pa)
+    if [ -z $HAS_MODULE_ENABLED ]; then
+        echo "load-module module-switch-on-connect" >> /etc/pulse/default.pa
+    fi
 }
 
 function install_programs() {
