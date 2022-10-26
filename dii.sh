@@ -184,8 +184,8 @@ function install_programs() {
         "vlc" "psmisc" "pavucontrol" "pipewire" "pipewire-audio-client-libraries"
         "ncal" "libnotify-bin" "playerctl" "pulseaudio" "pulseaudio-utils"
         "libspa-0.2-bluetooth" # pipewire dependency for bluetooth audio
-        "blueman" "i3blocks"
-        "lxappearance"
+        "blueman" "i3blocks" "lxappearance" 
+        "network-manager" "network-manager-gnome" # for applet
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
