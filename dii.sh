@@ -186,6 +186,7 @@ function install_programs() {
         "libspa-0.2-bluetooth" # pipewire dependency for bluetooth audio
         "blueman" "i3blocks" "lxappearance" 
         "network-manager" "network-manager-gnome" # for applet
+        "xautolock"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
