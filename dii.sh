@@ -83,10 +83,10 @@ function install_nodejs() {
     mkdir -p /home/$USERNAME/node
     cd /home/$USERNAME/node
 
-    wget https://nodejs.org/dist/v16.17.1/node-v16.17.1-linux-x64.tar.xz
+    wget https://nodejs.org/dist/v18.12.1/node-v18.12.1-linux-x64.tar.xz
 
-    tar -xf node-v16.17.1-linux-x64.tar.xz
-    cd node-v16.17.1-linux-x64
+    tar -xf node-v18.12.1-linux-x64.tar.xz
+    cd node-v18.12.1-linux-x64
     mkdir /usr/local/bin/nodejs
     mv lib/ share/ include/ bin/ /usr/local/bin/nodejs
 
