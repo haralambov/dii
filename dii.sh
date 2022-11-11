@@ -187,6 +187,7 @@ function install_programs() {
         "blueman" "i3blocks" "lxappearance" 
         "network-manager" "network-manager-gnome" # for applet
         "xautolock" "diodon" "compton"
+        "xdotool"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
