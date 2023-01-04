@@ -199,6 +199,10 @@ function install_rust() {
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 }
 
+function install_oh_my_zsh() {
+    su - $USERNAME -c 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
+}
+
 add_contrib_and_non_free
 install_programs
 add_user_to_sudoers
@@ -223,5 +227,6 @@ add_config_files
 change_folder_permissions
 
 install_rust
+install_oh_my_zsh
 
 cleanup
