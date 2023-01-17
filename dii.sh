@@ -188,7 +188,7 @@ function install_programs() {
         "network-manager" "network-manager-gnome" # for applet
         "xautolock" "diodon" "compton"
         "xdotool" "solaar" "tmux" "zsh" "zathura"
-        "gnome-disk-utility"
+        "gnome-disk-utility" "caffeine"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
