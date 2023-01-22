@@ -189,6 +189,7 @@ function install_programs() {
         "xautolock" "diodon" "compton"
         "xdotool" "solaar" "tmux" "zsh" "zathura"
         "gnome-disk-utility" "caffeine"
+        "ttf-ancient-fonts" "fonts-noto-color-emoji"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
