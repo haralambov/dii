@@ -177,7 +177,7 @@ function add_config_files() {
 
 function install_programs() {
     PROGRAMS=(
-        "sudo" "xorg" "git" "i3" "sakura" "feh" "htop" "rofi" "gxkb"
+        "sudo" "xorg" "git" "git-gui" "i3" "sakura" "feh" "htop" "rofi" "gxkb"
         "thunar" "thunar-archive-plugin" "firefox-esr" "screenfetch" "ripgrep" "curl" "tlp"
         "lm-sensors" "ufw" "redshift" "unzip" "zip" "unrar" "arandr"
         "mlocate" "tree" "python3-pip" "fuse" "snapd" "keepassxc"
