@@ -182,7 +182,7 @@ function install_programs() {
         "lm-sensors" "ufw" "redshift" "unzip" "zip" "unrar" "arandr"
         "mlocate" "tree" "python3-pip" "fuse" "snapd" "keepassxc"
         "mpv" "psmisc" "pavucontrol" "pipewire" "pipewire-audio-client-libraries"
-        "ncal" "libnotify-bin" "playerctl" "pulseaudio" "pulseaudio-utils"
+        "ncal" "libnotify-bin" "playerctl" "pulseaudio" "pulseaudio-utils" "pulsemixer"
         "libspa-0.2-bluetooth" # pipewire dependency for bluetooth audio
         "blueman" "i3blocks" "lxappearance" 
         "network-manager" "network-manager-gnome" # for applet
@@ -190,6 +190,7 @@ function install_programs() {
         "xdotool" "solaar" "tmux" "zsh" "zathura"
         "gnome-disk-utility" "caffeine"
         "ttf-ancient-fonts" "fonts-noto-color-emoji"
+        "newsboat"
     )
 
     for PROGRAM in "${PROGRAMS[@]}"; do
